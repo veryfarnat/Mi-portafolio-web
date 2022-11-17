@@ -1,0 +1,13 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com https://fonts.gstatic.com");
+body {
+    color:rgb(5, 32, 43);
+    margin: 15px;
+     border-top: 5px solid #0c2180;
+     border-bottom: 5px solid #190f6d;
+     background-color:#d8e3e6;
+}
+
+input{
+    color:rgb(129, 178, 196)
+}

@@ -1,0 +1,60 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com https://fonts.gstatic.com");
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary: #b6d0d8;
+  --secondary: #a8dee7;
+  --white: rgb(35, 76, 107);
+  --black: rgba(4, 34, 78, 0.884);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1.1px;
+  margin: 0;
+}
+h5 {
+  color: var(--secondary);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.bg-primary {
+  background: var(--primary);
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px !important;
+}
+
+.btn-primary {
+  background: var(--primary);
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: var(--white);
+  display: block;
+  max-width: max-content;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
+  h5 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Mi sitio web</title>
+     <!-- Styles here -->
+     <link rel="stylesheet" href="./assets/css/form.css" />
+</head>
+<body>
+    <script>
+        const $form = validacion.querySelector('#form')
+        const $buttonMailto = document.querySelector('#enviar')
+    
+        $form.addEventListener('submit', handleSubmit)
+    
+        function handleSubmit(event) {
+          event.preventDefault()
+          const form = new FormData(this)
+          $buttonMailto.setAttribute('href', `mailto:ponceperemontserrat@gmail.com.com? subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+          $buttonMailto.click()
+        }
+      </script>
+
+      
+      <form id="form" action="" class="form">
+        <h3 class="tag"><span>Contacto:</span></h3>
+        <label for="name">Nombre Completo por favor<span>*</span></label>
+        <input name="name" required type="text" id="name" placeholder="nombre">
+        <label for="email">Correo electrónico <span>*</span></label>
+        <input name="email" type="text" id="email" required placeholder="Escribe tu correo">
+        </br>
+       </br>
+        <label for="message">Comentarios</label>
+        <textarea id="message" name="message" id="" cols="30" rows="5"></textarea>
+        </br>
+        </br>
+        <button type="submit" class="btn primary full">Enviar</button>
+        <a href="mailto:ponceperezmontserrat@gmail.com" id="enviar"></a>
+        <h4>Muchas gracias</h4>
+        <img src="assets/img/perfil ilus.png"/>
+      </form>
+
+</body>
+</html>
